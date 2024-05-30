@@ -15,9 +15,9 @@
     <div class="header">
       <div class="hero">
           <p>IP Address Tracker</p>
-          <form action="post">
+          <form>
             <input type="search" id="search" placeholder=" Search for any IP address or domain">
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+            <button id="trackbutton"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
           </form>
         </div>
 
@@ -25,29 +25,30 @@
 
         <div class="box" id="box-noborder">
           <p>IP Address</p>
-          <span>192.212.174.101</span>
+          <span id="ip-result">--</span>
         </div>
   
         <div class="box ">
           <p>Location</p>
-          <span>Brooklyn, NY 10001</span>
+          <span id="Location">--</span>
         </div>
   
         <div class="box">
           <p>Timezone</p>
-          <span>UTC -05:00</span>
+          <span id="timezone">--</span>
         </div>
   
         <div class="box">
           <p>ISP</p>
-          <span>SpaceX Starlink</span>
+          <span id="ISP">--</span>
         </div>
 
       </div>
     </div>
-    <div class="map">
+    <div id="info">
 
     </div>
+    <script src="main.js"></script>
   </section>
 </body>
 </html>
