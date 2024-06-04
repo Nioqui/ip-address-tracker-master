@@ -1,0 +1,243 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    font-family: "Rubik", sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 350px; /* Tamaño fijo del encabezado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero form {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del formulario */
+    display: flex;
+    justify-content: center;
+}
+
+.hero form input {
+    width: calc(100% - 85px); /* Calcula el ancho del input teniendo en cuenta el ancho del botón */
+    height: 60px;
+    padding: 20px;
+    border-radius: 18px 0px 0px 18px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hero form button {
+    width: 85px;
+    height: 60px;
+    padding: 20px;
+    background-color: #020004;
+    border-radius: 0px 18px 18px 0px;
+    border-color: transparent;
+}
+
+.hero p {
+    color: #f1f1f1;
+    font-size: 38px;
+}
+
+.data {
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 70%;
+    flex-grow: 1;
+    z-index: -1;
+}
+
+.data .box {
+    width: 25%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid #DCDCDC;
+    font-weight: 500;
+    padding: 0px 30px;
+}
+
+.data .box p {
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+    font-weight: bold;
+}
+
+#box-noborder {
+    border-left: none;
+}
+
+#map {
+    width: 100%;
+    background-color: green;
+    flex-grow: 1; /* Permite que el mapa ocupe el espacio restante */
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    font-family: "Rubik", sans-serif;
+}
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    flex-direction: column;
+}
+
+.hero{
+    height: 100%;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero form{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero form input{
+    width: 600px;
+    height: 70px;
+    padding: 20px;
+    border-radius: 18px 0px 0px 18px;
+    border-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.hero form button{
+    width: 65px;
+    height: 70px;
+    padding: 20px;
+    background-color: #020004;
+    border-radius: 0px 18px 18px 0px;;
+    border-color: transparent;
+}
+
+.hero p{
+    color: #f1f1f1;
+    font-size: 38px;
+}
+
+
+.data{
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    gap: 2em;
+}
+
+.data .box{
+    width: 25%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid #DCDCDC;
+    font-weight: 500;
+    padding: 0px 30px;
+}
+
+.data .box p{
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+    font-weight: bold;
+}
+
+#box-noborder{
+    border-left: none;
+}
+
+#map{
+    display: flex;
+    width: 100%;
+    height: 597px;
+    background-color: green;
+    z-index: -1;
+}       
+
+
+@media screen and (max-width:768px){
+    
+}
