@@ -193,3 +193,10 @@ section {
         width: 70%;
     }
 }
+
+
+.github{
+    position: absolute;
+    top: 90vh; left:10px;
+}
+
