@@ -35,7 +35,6 @@ function trackIp() {
             return response.json();
         })
         .then(data => {
-            console.log(data)
             if (data.city === undefined && data.region === undefined && data.zip === undefined) {
                 alert('Coloca un IP válido');
                 document.getElementById('ip-result').innerText = "--";
