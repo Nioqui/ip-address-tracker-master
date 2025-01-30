@@ -25,8 +25,8 @@ document.getElementById('trackbutton').addEventListener('click', function(event)
 
 function trackIp() {
     let ip = document.getElementById('search').value;
-    const apiURL = `http://ip-api.com/json/${ip}`;
-
+    const apiURL = `https://ipapi.co/${ip}/json/`;
+    
     fetch(apiURL)
         .then(response => {
             if (!response.ok) {
@@ -37,13 +37,13 @@ function trackIp() {
         .then(data => {
             console.log(data)
             if (data.city === undefined && data.region === undefined && data.zip === undefined) {
-                alert('Coloca un IP o dominio válido');
+                alert('Coloca un IP válido');
                 document.getElementById('ip-result').innerText = "--";
                 document.getElementById('Location').innerText = "--";
                 document.getElementById('timezone').innerText = "--";
                 document.getElementById('ISP').innerText = "--";
             } else {
-                const newCoord = {lat: data.lat, lng: data.lon};
+                const newCoord = {lat: data.latitude, lng: data.longitude};
                 moveMarker(newCoord);
                 const utcOffset = getUtcOffset(data.timezone);
                 document.getElementById('timezone').innerText = utcOffset;
@@ -62,9 +62,9 @@ function moveMarker(newCoord) {
 }
 
 function displayInfo(data) {
-    document.getElementById('ip-result').innerText = data.query;
-    document.getElementById('Location').innerText = `${data.city} ${data.region} ${data.zip}`;
-    document.getElementById('ISP').innerText = data.isp;
+    document.getElementById('ip-result').innerText = data.ip;
+    document.getElementById('Location').innerText = `${data.city} ${data.region} ${data.country_code_iso3}`;
+    document.getElementById('ISP').innerText = data.org;
 }
 
 function displayError(message) {
