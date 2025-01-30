@@ -2,7 +2,7 @@ let map;
 let marker;
 
 function iniciarMap(coord) {
-    coord = {lat: undefined, lng: undefined};
+    coord = {lat: -32.733079520267225, lng: -68.81780159169362};
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: coord,
